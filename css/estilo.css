@@ -1,0 +1,130 @@
+/*
+  Cliente: Blog Web Standards
+  Projeto: galeriaScroll
+*/
+
+/*
+  --------------
+    PALETA DE CORES
+  --------------
+  
+  #0197e4 - Links
+  #ff0090 - Hover
+  
+*/
+
+/*
+--------------
+ORDEM DOS ATRIBUTOS
+--------------
+
+{ position:; top:; left:; float:; clear:; display:; width:; height:; margin:; padding:; border:; background:; font:; text:; color:; }
+
+*/
+
+/*
+  --------------
+    ELEMENTOS e CLASSES
+  --------------
+*/
+
+  /* ------- GERAL ------- */
+  * { margin: 0; padding: 0; z-index: 1; } /* reseta todas as margens, paddings e define o nivel das camadas do site */
+  html { padding-bottom: 20px; background: url(../imagens/topo-bg.jpg) center 0 no-repeat; font: 100% "Trebuchet MS", Verdana, Arial, sans-serif; }
+  body { background: url(../imagens/rodape-bg.png) bottom no-repeat; }
+  #limites { position: relative; width: 836px; margin: 0 auto; padding: 37px 30px 0; font-size: .75em; color: #000; }
+
+
+  /* ------- ELEMENTOS ------- */
+  a img, form fieldset { border: 0; }
+  form ol { list-style: none; }
+  hgroup, header, section, footer { display: block; }
+  a { text-decoration: none; color: #0197e4; }
+  a:hover { color: #ff0090; }
+  code { font-size: 1em; }
+
+  
+  /* ------- CLASSES ------- */
+  .direita { float: right; }
+  .esquerda { float: left; }
+  p.direita, p.esquerda { float: none; }
+  p.direita { text-align: right; }
+  p.esquerda { text-align: left; }
+  .centro { text-align: center; }
+  
+  /* contendo float */
+  .contemfloat:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+  .contemfloat { display: inline-block; }
+  /* Hides from IE-mac \*/
+  * .contemfloat { height: 1%; }
+  .contemfloat { display: block; }
+  /* End hide from IE-mac */
+  
+  
+  /* ------- TOPO ------- */
+  #topo { height: 212px; margin-bottom: 20px; background: url(../imagens/linha.png) bottom no-repeat; }
+  #topo img { position: relative; top: -10px; right: 10px; }
+  
+  #topo h3 { width: 296px; height: 34px; background: url(../imagens/topo-logo.png) no-repeat; text-indent: -9999em; overflow: hidden; }
+  #topo h3 a { display: block; height: 100%; }
+  
+  #topo hgroup { clear: both; padding-top: 40px; }
+  #topo hgroup h1 { padding-bottom: 4px; font-size: 2.9em; font-weight: normal; text-transform: lowercase; }
+  #topo hgroup h1 sup { font-size: .4em; text-transform: uppercase; }
+  #topo hgroup h2 { font-size: 1.3em; font-weight: normal; text-transform: lowercase; }
+  #topo hgroup h2 strong { font-weight: normal; text-transform: none; color: #0197e4; }
+  
+  
+  /* ------- NAVEGACAO ------- */
+  #indice { float: right; width: 275px; }
+  
+  #indice ol { margin-bottom: 1em; list-style: none; }
+  #indice ol li h3 { height: 44px; padding: 0 5px; background: url(../imagens/indice-item-bg.png) no-repeat; line-height: 44px; }
+  #indice ol li h3 a { font-size: 1.5em; }
+  #indice ol li a.expandir { float: right; width: 16px; height: 17px; margin-top: -30px; background: url(../imagens/icone-expansao.png) no-repeat; text-indent: -9999em; overflow: hidden; }
+  #indice ol li a.recolher { background-position: 0 -17px; }
+  #indice ol li ol { margin-bottom: 10px; font-size: 1.27em; list-style: none; }
+  #indice ol li ol li { margin: 0 11px; border-bottom: 1px solid #e6e6e6; }
+  #indice ol li ol li a { display: block; margin: 0 -11px; padding: 10px 12px; color: #000; }
+  #indice ol li ol li a:hover { background: #ff0090; text-decoration: none; color: #fff; }
+  
+  
+  /* ------- CONTEUDO ------- */
+  #conteudo { margin-right: 305px; }
+  
+  #conteudo header { height: 49px; margin-left: -60px; background: url(../imagens/secao-titulo-bg.png) repeat-y; line-height: 49px; color: #fff; }
+  #conteudo header a.download { float: left; width: 60px; height: 100%; background: url(../imagens/download.png) center no-repeat; text-indent: -9999em; overflow: hidden; }
+  #conteudo header em { position: absolute; display: none; width: 204px; height: 35px; margin: -27px 0 0 10px; background: url(../imagens/balao.png) no-repeat; line-height: 25px; font-style: normal; text-align: center; color: #fff; }
+  #conteudo header h3 { margin-left: 60px; padding: 0 20px; font-size: 1.63em; }
+  
+  #conteudo dl { margin-bottom: 3em; }
+  #conteudo dl dt { margin: 1em 0; font-size: 2.18em; }
+  #conteudo dl dd p { margin-bottom: 1em; }
+  #conteudo dl dd section, #conteudo dl dd { margin-bottom: 3em; }
+  #conteudo dl dd section h4 { margin-bottom: 1em; font-size: 1.45em; color: #ff0072; }
+  #conteudo dl dd aside, #conteudo dl dd p.voltar { padding: 10px; background: #f3f3f3; font-size: 1.1em; }
+  #conteudo dl dd aside { margin-bottom: 1em; line-height: 1.5em; }
+  #conteudo dl dd aside ul { margin: 0; }
+  #conteudo dl dd aside ul li { margin-bottom: 1em; }
+    #conteudo dl dd aside ul li:last-child { margin: 0; }
+  
+  #conteudo dl dd ol, #conteudo dl dd ul { line-height: 1.5em; }
+  #conteudo dl dd ol { margin: 2em 1.5em; }
+  #conteudo dl dd ul { margin: 2em 0; list-style: none; }
+  #conteudo dl dd ul li { padding-left: 15px; background: url(../imagens/bullet.gif) 0 5px no-repeat; }
+  
+  
+  /* ------- GALERIA ------- */
+  #galeria_demonstracao { padding: 10px; background: #f3f3f3; text-align: center; }
+  #galeria_demonstracao a.inativo { color: #999; }
+  #galeria_demonstracao .mascara { width: 438px; margin: 0 auto; padding: 10px 0; overflow: hidden; }
+  #galeria_demonstracao .mascara figure { float: left; width: 209px; margin: 0 5px; text-align: center; }
+  #galeria_demonstracao .mascara figure.ativo { opacity: .7; }
+  #conteudo dl dd #galeria_demonstracao ol { margin: 0; list-style: none; }
+  #galeria_demonstracao ol li { display: inline; margin: 0 5px; }
+  #galeria_demonstracao ol li.ativo a { color: #ff0090; }
+  
+  
+  /* ------- RODAPE ------- */
+  #rodape { height: 48px; padding-top: 90px; text-align: center; vertical-align: middle; }
+  #rodape p { margin-bottom: 10px; }

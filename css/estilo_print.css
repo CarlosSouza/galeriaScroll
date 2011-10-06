@@ -1,0 +1,31 @@
+/*
+  Cliente: 
+  Projeto: 
+*/
+
+/*
+  --------------
+  ORDEM DOS ATRIBUTOS
+  --------------
+
+  { position: ; top: ; left: ; clear: ; float: ; display: ; width: ; height: ; margin: ; padding: ; border: ; background: ; font: ; color: ; text: ; }
+
+*/
+
+
+/*
+  --------------
+  ELEMENTOS e CLASSES
+  --------------
+*/
+
+/* ------- GERAL ------- */
+html, body { font: 100% Arial, Helvetica, sans-serif; }
+#limites { margin: 0 auto; font-size: 11pt; color: #000; }
+
+
+/* ------- ELEMENTOS ------- */
+a { text-decoration: none; color: #000; }
+table { border: 1px solid #000; border-collapse: collapse; }
+section, header, hgroup, footer, aside, nav { display: block; }
+#topo, #coluna1, #rodape, .popup, form { display: none; }

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Script de construção de galeria em jQuery, de forma simples e fácil." />
+  <meta name="author" content="Carlos Eduardo de Souza" />
+  <title>galeriaScroll v3.0 - Blog Web Standards</title>
+  <link href="css/estilo.css?v=1" rel="stylesheet" type="text/css" media="screen" />
+  <link href="css/estilo_print.css?v=1" rel="stylesheet" type="text/css" media="print" />
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/galeriaScroll-3.0-min.js"></script>
+  <script type="text/javascript" src="scripts/funcionalidades.js"></script>
+  <!-- abre syntaxhighliter -->
+  <script type="text/javascript" src="scripts/shCore.js"></script>
+  <script type="text/javascript" src="scripts/shBrushXml.js"></script>
+  <script type="text/javascript" src="scripts/shBrushCss.js"></script>
+  <script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/shCoreDefault.css"/>
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <!-- fecha syntaxhighliter -->
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 8]><script type="text/javascript" src="scripts/ie6update.js"></script><![endif]-->
+  <!-- abre Google Analytics -->
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-413104-8']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script>
+  <!-- fecha Google Analytics -->
+</head>
+<body>
+<!-- abre limites -->
+<div id="limites">
+
+  <header id="topo">
+    <a class="direita" href="http://www.w3.org/html/logo/" title="HTML5 Powered with Semantics">
+      <img src="imagens/html5.png" alt="HTML5 Powered with Semantics" />
+    </a>
+    <h3><a href="http://www.webstandards.blog.br/" title="Visitar o Blog Web Standards">Blog Web Standards</a></h3>
+    <hgroup>
+      <h1>galeriaScroll <sup>v3.0</sup></h1>
+      <h2>Faça galerias de maneira rápida e fácil, utilizando a biblioteca <strong>jQuery</strong></h2>
+    </hgroup>
+  </header>
+  
+  <div id="indice">
+    <nav>
+      <ol>
+      	<li>
+          <h3><a href="#demonstracao" title="Ir para a seção Demonstração">Demonstração</a></h3>
+        </li>
+        <li>
+          <h3><a href="#js" title="Ir para a seção JavaScript">JavaScript</a></h3>
+        </li>
+        <li>
+          <h3><a href="#html" title="Ir para a seção HTML">HTML</a></h3>
+        </li>
+        <li>
+          <h3><a href="#css" title="Ir para a seção CSS">CSS</a></h3>
+        </li>
+      </ol>
+    </nav>
+    <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+      <a class="addthis_button_preferred_1"></a>
+      <a class="addthis_button_preferred_2"></a>
+      <a class="addthis_button_preferred_3"></a>
+      <a class="addthis_button_preferred_4"></a>
+      <a class="addthis_button_compact"></a>
+    </div>
+    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4d6bd7e946148a12"></script>
+    <!-- AddThis Button END -->
+  </div>
+  
+<!-- abre conteúdo com snippets -->
+  <div id="conteudo">
+    
+<!-- abre demonstração -->
+    <section id="demonstracao">
+      <header>
+        <a class="download" href="pacotes/galeriaScroll-3.0.zip" title="Baixar o pacote com o script">Baixar o galeriaScroll v3.0</a>
+        <h3>Download do galeriaScroll v3.0</h3>
+      </header>
+      <dl>
+        <dt>Demonstração</dt>
+        <dd>
+          <section class="snippet">
+            <div id="galeria_demonstracao">
+              <div class="mascara">
+                <div>
+                	<figure>
+                    <a href="imagens/class-header-semantics.jpg"><img src="imagens/class-header-semantics.jpg" alt="Exemplo de thumb" /></a>
+                    <figcaption>
+                      <h5>HTML5 Semantics</h5>
+                    </figcaption>
+                	</figure>
+                	<figure>
+                    <a href="imagens/class-header-css3.jpg"><img src="imagens/class-header-css3.jpg" alt="Exemplo de thumb" /></a>
+                    <figcaption>
+                      <h5>CSS3 Styling</h5>
+                    </figcaption>
+                	</figure>
+                	<figure>
+                    <a href="imagens/class-header-semantics.jpg"><img src="imagens/class-header-semantics.jpg" alt="Exemplo de thumb" /></a>
+                    <figcaption>
+                      <h5>HTML5 Semantics</h5>
+                    </figcaption>
+                	</figure>
+                	<figure>
+                    <a href="imagens/class-header-css3.jpg"><img src="imagens/class-header-css3.jpg" alt="Exemplo de thumb" /></a>
+                    <figcaption>
+                      <h5>CSS3 Styling</h5>
+                    </figcaption>
+                	</figure>
+                	<figure>
+                    <a href="imagens/class-header-semantics.jpg"><img src="imagens/class-header-semantics.jpg" alt="Exemplo de thumb" /></a>
+                    <figcaption>
+                      <h5>HTML5 Semantics</h5>
+                    </figcaption>
+                	</figure>
+                	<figure>
+                    <a href="imagens/class-header-semantics.jpg"><img src="imagens/class-header-semantics.jpg" alt="Exemplo de thumb" /></a>
+                    <figcaption>
+                      <h5>HTML5 Semantics</h5>
+                    </figcaption>
+                	</figure>
+                	<figure>
+                    <a href="imagens/class-header-semantics.jpg"><img src="imagens/class-header-semantics.jpg" alt="Exemplo de thumb" /></a>
+                    <figcaption>
+                      <h5>HTML5 Semantics</h5>
+                    </figcaption>
+                	</figure>
+                </div>
+              </div>
+            </div>
+            
+          </section>
+        </dd>
+      </dl>
+    </section>
+<!-- fecha demonstração -->
+
+<!-- abre implementação JavaScript -->
+    <section id="js">
+      <dl>
+        <dt>JavaScript</dt>
+        <dd>
+          <section class="snippet">
+            <h4>Executando o plugin e configurando suas opções</h4>
+            <p>Para executar o plugin no elemento desejado, é só criar uma nova instância:</p>
+            <pre class="brush: js;">
+var galeria_principal = new $.galeriaScroll($('#elemento'));
+            </pre>
+            <p>As definições que já vem configuradas no plugin são:</p>
+            <pre class="brush: js;">
+'galeriaAnterior'  : 'anterior',        // classe para o link anterior
+'galeriaProximo'   : 'proximo',         // classe para o link proximo
+'itemGaleria'      : 'figure',          // elemento que contem cada item da galeria
+'estruturaGaleria' : '.mascara > div',  // elemento que sera animado (com margin)
+'velocidade'       : 250,               // velocidade da animacao em ms
+'paginacao'        : false,             // true / false para exibir ou esconder a paginacao
+'ampliacao'        : false              // true / false para exibir ou esconder a popup da imagem ampliada
+            </pre>
+            <p>Caso queira alterar algum padrão, é só criar a nova instância do plugin para o elemento desejado, alterando o valor da opção:</p>
+            <pre class="brush: js;">
+var galeria_principal = new $.galeriaScroll($('#elemento'), {
+  paginacao: true,
+  ampliacao: true
+});
+            </pre>
+            <aside>
+              <ul>
+                <li>Para incluir paginação e/ou a popup para imagem ampliada, é só colocar o valor <strong>true</strong>, conforme o exemplo acima.</li>
+              	<li>As classes dos links de navegação (esquerda e direita) são definidas pelas variáveis 'galeriaAnterior' e 'galeriaProximo' respectivamente;</li>
+              	<li>A popup da imagem ampliada se baseia no <strong>href do link</strong> que envolve a imagem.</li>
+              </ul>
+            </aside>
+            <h4>Controlando a galeria com links externos</h4>
+            <p>Para executar o scroll da galeria por um link externo, basta executar o metodo no clique do mesmo:</p>
+            <pre class="brush: js;">
+$(document).ready(function(){
+
+  // cria a instância da galeria
+  var galeria_principal = new $.galeriaScroll($('#elemento'));
+  
+  // executando o método em um link qualquer, para fazer o scroll
+  $('a').click(function(){
+    
+    galeria_principal.scrollGaleria('anterior'); // O link DEVE ter a mesma classe usada na navegacao da galeria (por padrao usa-se 'anterior' e 'proximo')
+    
+    return false;
+    
+  });
+  
+  // a paginacao pode ser controlada tambem
+  $('a').click(function(){
+    
+    galeria_principal.scrollPaginacao('2'); // No caso da paginacao, define-se para qual pagina o link apontara
+    return false;
+    
+  });
+
+});
+            </pre>
+            <p class="voltar"><a href="#indice" title="Voltar ao índice">Voltar ao índice</a></p>
+          </section>
+        </dd>
+      </dl>
+    </section>
+<!-- fecha implementação JavaScript -->
+
+<!-- abre implementação HTML -->
+    <section id="html">
+      <dl>
+        <dt>HTML</dt>
+        <dd>
+          <section class="snippet">
+            <h4>Cabeçalho da página</h4>
+            <pre class="brush: html; highlight: [4,5]">
+&lt;head&gt;
+...
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;scripts/galeriaScroll-3.0-min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;scripts/funcionalidades.js&quot;&gt;&lt;/script&gt;
+...
+&lt;/head&gt;
+            </pre>
+            <aside>
+              <ul>
+              	<li>Insira a chamada para o jQuery com o script contendo as definições, além da própria galeria.</li>
+              </ul>
+            </aside>
+            <h4>Código da galeria</h4>
+            <pre class="brush: html; highlight: [1, 2, 4]">
+&lt;div id=&quot;galeria_demonstracao&quot;&gt;
+  &lt;div class=&quot;mascara&quot;&gt;
+    &lt;div&gt;
+      &lt;figure&gt;
+        &lt;img src=&quot;imagens/class-header-semantics.jpg&quot; alt=&quot;Exemplo de thumb&quot; /&gt;
+        &lt;figcaption&gt;
+          &lt;h5&gt;HTML5 Semantics&lt;/h5&gt;
+        &lt;/figcaption&gt;
+      &lt;/figure&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </pre>
+            <aside>
+              <p>Lembre-se que:</p>
+              <ul>
+              	<li>Linha 2: O elemento com a classe "mascara" é <strong>obrigatório</strong>, pois ele delimita quantos itens aparecerão na tela;</li>
+              	<li>Linha 3: O elemento <code>&lt;figure&gt;</code> é opcional. Você pode trocá-lo por um <code>&lt;li&gt;</code>, mas consequentemente terá de trocar a <code>div</code> acima por uma <code>ul</code>;</li>
+              	<li>Qualquer ajuste na estrutura interna (dentro da máscara) deve ser atualizada nas opções do script (ex: funcionalidades.js).</li>
+              </ul>
+            </aside>
+            <p class="voltar"><a href="#indice" title="Voltar ao índice">Voltar ao índice</a></p>
+          </section>
+        </dd>
+      </dl>
+    </section>
+<!-- fecha implementação HTML -->
+
+<!-- abre implementação CSS -->
+    <section id="css">
+      <dl>
+        <dt>CSS</dt>
+        <dd>
+          <section class="snippet">
+            <h4>Implementação no CSS</h4>
+            <pre class="brush: css; highlight: [4, 5]">
+/* ------- GALERIA ------- */
+#galeria_demonstracao { padding: 10px; background: #f3f3f3; text-align: center; }
+#galeria_demonstracao a.inativo { color: #999; }
+#galeria_demonstracao .mascara { width: 438px; margin: 0 auto; padding: 10px 0; overflow: hidden; }
+#galeria_demonstracao .mascara figure { float: left; width: 220px; text-align: center; }
+#galeria_demonstracao ol li { display: inline; margin: 0 5px; }
+#galeria_demonstracao ol li.ativo a { color: #ff0090; }
+            </pre>
+            <aside>
+              <ul>
+              	<li>Linha 4: Definir largura para a <code>div.mascara</code>;</li>
+              	<li>Linha 5: Também definir largura para o elemento <code>figure</code> (correspondente ao item da lista - pode ser um <code>&lt;li&gt;</code> por exemplo), pois esta será usada em conjunto com a medida da máscara para definir os itens que "cabem" na tela.</li>
+              	<li><strong>As medidas deste elemento (incluindo padding e margens) devem ser calculadas precisamente, caso contrário o plugin pode apresentar defeitos no cálculo das páginas.</strong></li>
+              </ul>
+            </aside>
+            <p class="voltar"><a href="#indice" title="Voltar ao índice">Voltar ao índice</a></p>
+          </section>
+        </dd>
+      </dl>
+    </section>
+<!-- fecha implementação HTML -->
+    
+  </div>
+<!-- fecha conteúdo com snippets -->
+
+<!-- abre rodapé -->
+  <footer id="rodape">
+    <p>galeriaScroll - <a href="http://www.webstandards.blog.br/" title="Visitar o Blog Web Standards">Blog Web Standards</a></p>
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/br/"><img alt="Licença Creative Commons" src="http://i.creativecommons.org/l/by/3.0/br/88x31.png" /></a></p>
+  </footer>
+<!-- fecha rodapé -->
+
+</div>
+<!-- fecha limites -->
+</body>
+</html>
